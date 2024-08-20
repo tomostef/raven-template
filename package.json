@@ -9,15 +9,25 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "overrides": {
+    "@aws-amplify/appsync-modelgen-plugin": "2.12.4-raven.0",
+    "@aws-amplify/data-schema": "0.0.0-ai-20240819181254",
+    "@aws-amplify/graphql-api-construct": "1.11.6-raven.7",
+    "@aws-amplify/graphql-conversation-transformer": "0.1.1-raven.5",
+    "@aws-amplify/graphql-generation-transformer": "0.1.1-raven.6"
+  },
   "dependencies": {
     "@aws-amplify/ui-react": "^6.1.13",
     "aws-amplify": "^6.4.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@aws-amplify/data-schema": "0.0.0-ai-20240819181254"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.0.4",
     "@aws-amplify/backend-cli": "^1.1.1",
+    "@aws-amplify/graphql-conversation-transformer": "0.1.1-raven.5",
+    "@aws-amplify/graphql-generation-transformer": "0.1.1-raven.6",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
