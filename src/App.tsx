@@ -64,8 +64,12 @@ function App() {
 
   const handleGenerateRecipe = async () => {
     const { data, errors } = await client.generations.generateRecipe({
-      description: currentRecipePrompt
-    });
+      description: currentRecipePrompt 
+    },
+    { 
+      authMode: 'apiKey' 
+    }
+    );
 
     console.log(data, errors);
     setCurrentRecipe(JSON.stringify(data, null, 2) ?? "");
